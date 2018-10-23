@@ -1,4 +1,56 @@
+/*全体の背景をピンクに設定*/
 body{
-    background-image: url("../image/sample.jpg");
-    background-color: blue;
+background-color:mistyrose;
+margin: 0%;
+padding: 0%;
 }
+
+#nav ul {
+    /*グローバルナビゲーションのリストの点を隠す*/
+    list-style: none;
+    /*範囲内に表示が収まらない場合の表示方法の指定*/
+    /*    overflow: hidden;*/
+}
+
+    #nav li {
+        width: 200px;
+        text-align: center;
+        background-color: black;
+        float: left;
+}
+    #nav li a {
+    /*下線を非表示にする*/
+        text-decoration: none;
+        color: white;
+    /*フォントを太くする*/
+        font-weight: bold;
+}
+
+/*メイン画像の設定*/
+#main{
+    position: relative;
+}
+/*メインのメッセージ設定*/
+#main img{
+    width: 100%;
+}
+#main p1{
+    position: absolute;
+    color:white;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin:0%;
+    padding:0%;
+}
+
+#main p2{
+    position: absolute;
+    color: white;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+}
+
