@@ -1,31 +1,40 @@
 /*全体の背景をピンクに設定*/
 body{
 background-color:mistyrose;
-margin: 0%;
+/*margin: 0%;
 padding: 0%;
+*/}
+
+.jumbotron-extend{
+    background:url(../image/sample1.jpg) center no-repeat; background-size: cover;
+    position: relative;
+    height: 100vh;
+    min-height: 300px;
 }
 
-#nav ul {
-    /*グローバルナビゲーションのリストの点を隠す*/
-    list-style: none;
-    /*範囲内に表示が収まらない場合の表示方法の指定*/
-    /*    overflow: hidden;*/
+.jumbotron-container {
+    position: relative;
+    top: 50%;
+    left:40%;
+    transform: translateY(-50%);
 }
 
-    #nav li {
-        width: 200px;
-        text-align: center;
-        background-color: black;
-        float: left;
+.site-name {
+    margin-bottom: 40px;
+    color: #fff;
+    font-family: serif;
 }
-    #nav li a {
-    /*下線を非表示にする*/
-        text-decoration: none;
-        color: white;
-    /*フォントを太くする*/
-        font-weight: bold;
+.btn-black {
+    border-radius: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Avenir', serif;
 }
-
+/*.btn-black:hover {
+     background-color: #fff;
+     color: #000;
+}
+*/
 /*メイン画像の設定*/
 #main{
     position: relative;
@@ -37,7 +46,7 @@ padding: 0%;
 #main p1{
     position: absolute;
     color:white;
-    top:50%;
+    top:100%;
     left:50%;
     transform: translate(-50%,-50%);
     margin:0%;
