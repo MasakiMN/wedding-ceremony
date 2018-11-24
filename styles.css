@@ -1,0 +1,141 @@
+/*全体の背景をピンクに設定*/
+body{
+background-color:mistyrose;
+/*margin: 0%;
+padding: 0%;
+*/}
+
+.same-bg{
+    color: orangered;
+    background: url(../image/sample2.JPG);
+    background-size: cover;
+    height: 100%;
+}
+
+
+.jumbotron-extend{
+    background:url(../image/sample4.jpg) center no-repeat; background-size: cover;
+    position: relative;
+    height: 1000px;
+    max-width: 100%;
+/*    min-height: 300px;
+*/}
+
+.jumbotron-container {
+    position: relative;
+    top: 50%;
+/*    left:40%;*/
+    transform: translateY(-50%);
+}
+
+.site-name {
+    margin-bottom: 40px;
+    color: #fff;
+    font-family: serif;
+}
+.btn-black {
+    border-radius: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Avenir', serif;
+}
+/*.btn-black:hover {
+     background-color: #fff;
+     color: #000;
+}
+*/
+/*メイン画像の設定*/
+#main{
+    position: relative;
+}
+/*メインのメッセージ設定*/
+#main img{
+    width: 100%;
+}
+#main p1{
+    position: absolute;
+    color:white;
+    top:100%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin:0%;
+    padding:0%;
+}
+
+#main p2{
+    position: absolute;
+    color: white;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+}
+
+.feature{
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.feature:nth-of-type(odd) .img-btn1{
+    float: right;
+    padding-left: 40px;
+}
+
+.feature:nth-of-type(even) .img-btn2{
+    float: left;
+    padding-right: 40px;
+}
+
+
+.section-title{
+    text-align: center;
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+.section-title::after{
+    content: attr(data-subtitle);
+    display: block;
+    font-size: 16px;
+    color: tomato;
+    padding-top: 10px;
+}
+
+.img-btn{
+    padding: 0;
+    opacity: 0.5;
+}
+
+.img-btn:hover{
+    opacity: 1.0;
+}
+
+.btn-title1{
+    background-color: aqua;
+    font-size :16x;
+    font-family: Verdana, sans-serif;
+    color: darkviolet;
+    margin:0;
+    text-align:center;
+}
+
+.btn-title2{
+    background-color:blueviolet;
+    font-size :16x;
+    font-family: Verdana, sans-serif;
+    color: darkorange;
+    margin:0;
+    text-align:center;
+}
+
+/* footer */
+footer{
+    padding: 40px 0;
+    text-align: center;
+    color: #aaa;
+}
+
